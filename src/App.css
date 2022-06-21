@@ -1,0 +1,76 @@
+html, body, #root {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+}
+
+#app {
+  margin: 0 auto;
+  padding: 40px 20px 0px;
+  text-align: center;
+  background-color: rgb(27, 27, 27);
+  width: 390px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+.current-weather__icon {
+  max-width: 230px;
+}
+
+.current-weather__feels-like,
+.current-weather__description {
+  font-size: 16px;
+}
+
+.hourly-title {
+  text-align: left;
+  width: 100%;
+  
+}
+
+.hourly-forecast__container {
+  overflow: hidden;
+  max-width: 360px;
+}
+
+.forecast {
+  display: flex;
+  column-gap: 15px;
+  overflow-x: scroll;
+  
+}
+
+.forecast-item {
+  height: 130px;
+}
+
+.hourly-forecast {
+  font-size: 12px;
+  height: 150px;
+}
+
+.forecast-item img {
+  max-width: 50px;
+}
+
+input[type=search] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
